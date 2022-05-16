@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-//Request root and respond with item Model Pod (from models schema)
+//Request root and respond with item Model Crypto (from models schema)
 //and if it exists based on db connected too we propagate and
 //return as array to index
 app.get('/', async (req, res) => {
@@ -30,7 +30,7 @@ app.get('/', async (req, res) => {
             description: req.body.description
         });
         await newCrypto.save();
-        res.redirect('/');
+        res.redirect('/?key=123');
     })
     
     // Create Task
