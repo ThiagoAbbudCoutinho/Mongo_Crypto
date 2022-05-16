@@ -1,5 +1,5 @@
 //import
-require('dotenv').config();
+//require('dotenv').config();
 const mongoose = require('mongoose');
 //connect to db via DB's url
 
