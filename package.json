@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ThiagoAbbudCoutinho/Mongo_Crypto/issues"
   },
-  "homepage": "https://github.com/ThiagoAbbudCoutinho/Mongo_Crypto#readme"
+  "homepage": "https://github.com/ThiagoAbbudCoutinho/Mongo_Crypto#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
