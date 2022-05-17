@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose');
 
 const CryptoSchema = new Schema({
-    crypto: {
+    name: {
         type: String,
         required: true
     },

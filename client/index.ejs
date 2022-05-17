@@ -26,11 +26,11 @@
                 </button>
             </form>
 
-            <% cryptos.forEach(function (e,i,crypto) { var cryptoId = crypto._id %>
+            <% cryptos.forEach(function (crypto,i) { var cryptoId = crypto._id %>
 
 				<div class="card card-body mt-2">
                     <div id="cryptoId"><%= i %></div>
-                    <h5><%= crypto.crypto %> -  </h5>
+                    <h5><%= crypto.name %> -  </h5>
                     <p><%= crypto.description %></p>
 					<h2>
 						<strong>
