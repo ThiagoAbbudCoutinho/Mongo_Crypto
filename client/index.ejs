@@ -15,12 +15,12 @@
         <div class="row">
             <div class="col-md-4 offset-md-4">
                 <form action="https://secure-river-00432.herokuapp.com/add" method="POST" class="card card-body">
-                <div class="form-group">
-                    <input type="text" name="crypto" placeholder="Write a new crypto"form-control" autofocus>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="description" placeholder="Write A Description" class="form-control">
-                </div>
+					<div class="form-group">
+						<input type="text" name="crypto"  style="width: 290px" placeholder="Write a new crypto"form-control" autofocus>
+					</div>
+					<div class="form-group">
+						<input type="text" name="description"  style="width: 290px" placeholder="Write A Description" class="form-control">
+					</div>
                 <button class="btn btn-primary">
                     Save
                 </button>
@@ -32,13 +32,13 @@
                     <%= i %>
                     <h5> <%= crypto.crypto %> -  </h5>
                     <p><%= crypto.description %></p>
-                    <h2>
+                    <h6>
                         <strong>
                             <a class="btn btn-primary" href="https://secure-river-00432.herokuapp.com/?key=123" id="<%= crypto._id %>" onclick="deleteCrypto(this.id);">
                                 DELETE
                             </a>
                         </strong>
-                    </h2>
+                    </h6>
                 </div>
             <% }) %> 
         </div>
