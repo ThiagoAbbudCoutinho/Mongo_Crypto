@@ -16,7 +16,7 @@
 			<div class="col-md-4 offset-md-4">
 				<form action="https://secure-river-00432.herokuapp.com/add" method="POST" class="card card-body">
                 <div class="form-group">
-                    <input type="text" name="crypto" placeholder="Write A new Task" class="form-control" autofocus>
+                    <input type="text" name="crypto" placeholder="Write a new crypto"form-control" autofocus>
                 </div>
                 <div class="form-group">
                     <input type="text" name="description" placeholder="Write A Description" class="form-control">
@@ -26,9 +26,10 @@
                 </button>
             </form>
 
-            <% cryptos.forEach(function (crypto) { var cryptoId = crypto._id %>
-                <div class="card card-body mt-2">
-                    <div id="cryptoId"><%= crypto._id %></div>
+            <% cryptos.forEach(function (crypto, i) { var cryptoId = crypto._id %>
+
+				<div class="card card-body mt-2">
+                    <div id="cryptoId"><%= i %></div>
                     <h5><%= crypto.crypto %> -  </h5>
                     <p><%= crypto.description %></p>
 					<h2>
