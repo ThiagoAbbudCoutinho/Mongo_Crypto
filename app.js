@@ -16,10 +16,8 @@ app.use(express.urlencoded({ extended: false }));
 //return as array to index
 app.get('/', async (req, res) => {
  
-  //  if(req.query.key === "123"){
             const cryptos = await Crypto.find();
             res.render('index', { cryptos });
-  //      } else { res.send('sorry you are not authed') }
         
     })
     
